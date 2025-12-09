@@ -50,3 +50,34 @@ ai-insights-automation-agent/
 ├── images/
 └── README.md
 
+┌────────────────────┐
+│    Data Source     │
+│  (CSV / BigQuery)  │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│  Preprocessing     │
+│ (Python Script)    │
+│  • Cleans data     │
+│  • Detects trends  │
+│  • Flags anomalies │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│   LLM Engine       │
+│ (AI Model: GPT)    │
+│ • Generates insights│
+│ • Summarizes trends │
+│ • Suggests actions  │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│  Automation Layer  │
+│   (n8n Workflow)   │
+│ • Sends output     │
+│   to Slack/Email   │
+└────────────────────┘
+
