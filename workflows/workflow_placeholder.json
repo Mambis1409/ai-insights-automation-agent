@@ -1,0 +1,26 @@
+{
+  "name": "AI Insights Automation Agent",
+  "description": "Example n8n-style workflow placeholder for an automated insights pipeline.",
+  "nodes": [
+    {
+      "id": "1",
+      "type": "trigger",
+      "name": "Weekly Schedule"
+    },
+    {
+      "id": "2",
+      "type": "python",
+      "name": "Preprocess Data"
+    },
+    {
+      "id": "3",
+      "type": "llm",
+      "name": "Generate Insights"
+    },
+    {
+      "id": "4",
+      "type": "notification",
+      "name": "Send Summary to Slack/Email"
+    }
+  ]
+}
